@@ -1,0 +1,147 @@
+.navbar {
+  background-color: #ffffff;
+  height: 65px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 1.2rem;
+  color: black;
+  justify-content: space-between;
+}
+.navbar > ul {
+  display: flex;
+}
+.navbar__logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  object-fit: contain;
+  width: 60px;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.navbar__menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.navbar__item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.navbar__links {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navbar__links:hover {
+  background-color: #1888ff;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: black;
+}
+
+.navbar__links-mobile {
+  display: none;
+}
+
+.navbar__menuIcon {
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .navbar__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navbar__menu.active {
+    background: #ffffff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar__links:hover {
+    background-color: #1888ff;
+    border-radius: 0;
+  }
+
+  .navbar__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar__menuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: black;
+    font-size: 2rem;
+  }
+
+  .navbar__links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #ffffff;
+    text-decoration: none;
+    color: #1888ff;
+    font-size: 1.5rem;
+  }
+
+  .navbar__links-mobile:hover {
+    background: #fff;
+    color: #1888ff;
+    transition: 250ms;
+  }
+}

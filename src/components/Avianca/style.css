@@ -1,0 +1,31 @@
+.avianca {
+  background-image: url("https://astelus.com/wp-content/viajes/las-principales-aerolineas-del-mundo.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  object-fit: contain;
+  flex-direction: column;
+}
+.avianca__btn {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  background-color: #260383;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.avianca__btn:hover {
+  background-color: #ffffff;
+  color: #260383;
+  border: 1px solid #262626;
+}
+.avianca__btn:focus {
+  outline: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

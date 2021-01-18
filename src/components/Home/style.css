@@ -1,0 +1,8 @@
+.home {
+  background-image: url("https://astelus.com/wp-content/viajes/las-principales-aerolineas-del-mundo.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  object-fit: contain;
+}

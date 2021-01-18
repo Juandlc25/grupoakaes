@@ -1,0 +1,44 @@
+.successfullyMsg {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #8bc34a;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #87d185;
+
+  animation: successfullyMsg 0.5s 1;
+  -webkit-animation: successfullyMsg 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay: 2s;
+  -webkit-animation-delay: 1s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes successfullyMsg {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes successfullyMsg {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.successfullyMsg__btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #8bc34a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

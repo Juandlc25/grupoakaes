@@ -1,0 +1,48 @@
+.customTextInput {
+  display: flex;
+  flex-direction: column;
+}
+.customTextInput__input {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #a2a2a2;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+}
+.customTextInput__number {
+  border-radius: 10px;
+  border: 1px solid #a2a2a2;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  height: 30px;
+  width: 210px;
+}
+input[type="text"]:disabled {
+  background: #cccccc;
+  border: 1px solid #cccccc;
+}
+input[type="number"]:disabled {
+  background: #cccccc;
+  border: 1px solid #cccccc;
+}
+input[type="text"]:focus {
+  border: 1px solid #a2e2f5;
+  outline: none;
+}
+input:invalid {
+  border-color: red;
+  outline: none;
+}
+input[type="email"]:focus {
+  border: 1px solid #a2e2f5;
+  outline: none;
+}
+input[type="password"]:focus {
+  border: 1px solid #a2e2f5;
+  outline: none;
+}
+input[type="number"]:focus {
+  border: 1px solid #a2e2f5;
+  outline: none;
+}
